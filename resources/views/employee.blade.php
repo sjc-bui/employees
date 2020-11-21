@@ -10,7 +10,7 @@
                 <th scope="col">First Name</th>
                 <th scope="col">Extension</th>
                 <th scope="col">Email</th>
-                <th scope="col">Office Code</th>
+                <th scope="col">City</th>
                 <th scope="col">Report To</th>
                 <th scope="col">Job Title</th>
             </tr>
@@ -23,7 +23,7 @@
                     <td>{{ $d->firstName }}</td>
                     <td>{{ $d->extension }}</td>
                     <td>{{ $d->email }}</td>
-                    <td>{{ $d->officeCode }}</td>
+                    <td>{{ $d->city }}</td>
                     <td>{{ $d->reportsTo }}</td>
                     <td>{{ $d->jobTitle }}</td>
                 </tr>

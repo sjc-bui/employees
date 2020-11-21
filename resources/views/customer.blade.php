@@ -7,13 +7,14 @@
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
-                <th scope="col">Last Name</th>
-                <th scope="col">First Name</th>
+                <th scope="col">Contact Name</th>
                 <th scope="col">Phone</th>
                 <th scope="col">City</th>
                 <th scope="col">State</th>
                 <th scope="col">Postal Code</th>
                 <th scope="col">Country</th>
+                <th scope="col">Employee</th>
+                <th scope="col">Credit Limit</th>
             </tr>
         </thead>
         <tbody>
@@ -21,13 +22,14 @@
                 <tr>
                     <td>{{ $d->customerNumber }}</td>
                     <td>{{ $d->customerName }}</td>
-                    <td>{{ $d->contactLastName }}</td>
-                    <td>{{ $d->contactFirstName }}</td>
+                    <td>{{ $d->contactLastName }} {{ $d->contactFirstName }}</td>
                     <td>{{ $d->phone }}</td>
                     <td>{{ $d->city }}</td>
                     <td>{{ $d->state }}</td>
                     <td>{{ $d->postalCode }}</td>
                     <td>{{ $d->country }}</td>
+                    <td>{{ $d->lastName }} {{ $d->firstName }}</td>
+                    <td>{{ $d->creditLimit }}</td>
                 </tr>
             @endforeach
         </tbody>

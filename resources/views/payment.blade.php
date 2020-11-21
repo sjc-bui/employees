@@ -6,6 +6,8 @@
         <thead>
             <tr>
                 <th scope="col">Customer Number</th>
+                <th scope="col">Customer Name</th>
+                <th scope="col">Contact Name</th>
                 <th scope="col">Check Number</th>
                 <th scope="col">Payment Date</th>
                 <th scope="col">Amount</th>
@@ -15,6 +17,8 @@
             @foreach ($data as $d)
                 <tr>
                     <td>{{ $d->customerNumber }}</td>
+                    <td>{{ $d->customerName }}</td>
+                    <td>{{ $d->contactLastName }} {{ $d->contactFirstName }}</td>
                     <td>{{ $d->checkNumber }}</td>
                     <td>{{ $d->paymentDate }}</td>
                     <td>{{ $d->amount }}</td>
