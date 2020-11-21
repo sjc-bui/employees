@@ -29,22 +29,22 @@
                     <a class="nav-link" href="{{ route('employees') }}">Employees</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Offices</a>
+                    <a class="nav-link" href="{{ route('offices') }}">Offices</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Order Details</a>
+                    <a class="nav-link" href="{{ route('orderdetails') }}">Order Details</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Orders</a>
+                    <a class="nav-link" href="{{ route('orders') }}">Orders</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Payments</a>
+                    <a class="nav-link" href="{{ route('payments') }}">Payments</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Product Lines</a>
+                    <a class="nav-link" href="{{ route('productlines') }}">Product Lines</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="{{ route('products') }}">Products</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Free API</a>
