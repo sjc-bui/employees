@@ -21,33 +21,40 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="{{ route('customers') }}">Customers<span
-                            class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link {{ request()->is('customers*') ? 'nav__active' : '' }}"
+                        href="{{ route('customers') }}">Customers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('employees') }}">Employees</a>
+                    <a class="nav-link {{ request()->is('employees*') ? 'nav__active' : '' }}"
+                        href="{{ route('employees') }}">Employees</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('offices') }}">Offices</a>
+                    <a class="nav-link {{ request()->is('offices*') ? 'nav__active' : '' }}"
+                        href="{{ route('offices') }}">Offices</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('orderdetails') }}">Order Details</a>
+                    <a class="nav-link {{ request()->is('orderdetails*') ? 'nav__active' : '' }}"
+                        href="{{ route('orderdetails') }}">Order Details</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('orders') }}">Orders</a>
+                    <a class="nav-link {{ request()->is('orders*') ? 'nav__active' : '' }}"
+                        href="{{ route('orders') }}">Orders</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('payments') }}">Payments</a>
+                    <a class="nav-link {{ request()->is('payments*') ? 'nav__active' : '' }}"
+                        href="{{ route('payments') }}">Payments</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('productlines') }}">Product Lines</a>
+                    <a class="nav-link {{ request()->is('productlines*') ? 'nav__active' : '' }}"
+                        href="{{ route('productlines') }}">Product Lines</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('products') }}">Products</a>
+                    <a class="nav-link {{ request()->is('products*') ? 'nav__active' : '' }}"
+                        href="{{ route('products') }}">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Free API</a>
+                    <a class="nav-link disabled" href="#">Free API</a>
                 </li>
             </ul>
         </div>

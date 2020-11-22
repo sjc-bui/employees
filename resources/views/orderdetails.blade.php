@@ -6,7 +6,11 @@
         <thead>
             <tr>
                 <th scope="col">Order Number</th>
-                <th scope="col">Product Code</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Product Line</th>
+                <th scope="col">Product Scale</th>
+                <th scope="col">Product Vendor</th>
+                <th scope="col">Product Description</th>
                 <th scope="col">Quantity Ordered</th>
                 <th scope="col">Price Each</th>
                 <th scope="col">Order Line Number</th>
@@ -16,7 +20,11 @@
             @foreach ($data as $d)
                 <tr>
                     <td>{{ $d->orderNumber }}</td>
-                    <td>{{ $d->productCode }}</td>
+                    <td>{{ $d->productName }}</td>
+                    <td>{{ $d->productLine }}</td>
+                    <td>{{ $d->productScale }}</td>
+                    <td>{{ $d->productVendor }}</td>
+                    <td>{{ $d->productDescription }}</td>
                     <td>{{ $d->quantityOrdered }}</td>
                     <td>{{ $d->priceEach }}</td>
                     <td>{{ $d->orderLineNumber }}</td>
