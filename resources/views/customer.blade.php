@@ -2,6 +2,9 @@
 
 @section('content')
     <h3>Customers</h3>
+    <div class="col-sm-12">
+        <a target="_blank" href="{{ $request->root() }}/api/v1/customers">Api</a>
+    </div>
     <table class="table table-hover">
         <thead>
             <tr>
